@@ -1,3 +1,3 @@
 import time
 
-print(f"{time.time():,}")
+print(f"{time.time():,.4f}")
