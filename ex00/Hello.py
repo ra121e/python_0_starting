@@ -4,8 +4,7 @@ ft_set = {"Hello", "Hello", "tutu!"}
 ft_dict = {"Hello" : "titi!"}
 #your code here
 
-
-
+ft_list[1] = "World!"
 
 ft_dict["Hello"] = "42Paris!"
 
