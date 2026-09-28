@@ -1,10 +1,14 @@
 ft_list = ["Hello"]
 ft_tuple = ("Hello", "toto!")
 ft_set = {"Hello", "Hello", "tutu!"}
-ft_dict = {"Hello" : "titi!"}
+ft_dict = {"Hello": "titi!"}
 #your code here
 
-ft_list[1] = "World!"
+ft_list.append("World!")
+ft_tuple = ("Hello", "France!")
+ft_set.remove("tutu!")
+ft_set.add("Paris!")
+
 
 ft_dict["Hello"] = "42Paris!"
 
