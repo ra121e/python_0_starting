@@ -2,7 +2,7 @@ ft_list = ["Hello"]
 ft_tuple = ("Hello", "toto!")
 ft_set = {"Hello", "Hello", "tutu!"}
 ft_dict = {"Hello": "titi!"}
-#your code here
+# your code here
 
 ft_list.append("World!")
 ft_tuple = ("Hello", "France!")
@@ -19,8 +19,8 @@ print(ft_set)
 print(ft_dict)
 
 # expected output:
-#$>python Hello.py | cat -e
-#['Hello', 'World!']$
-#('Hello', 'France!')$
-#{'Hello', 'Paris!'}$
-#{'Hello': '42Paris!'}$
+# $>python Hello.py | cat -e
+# ['Hello', 'World!']$
+# ('Hello', 'France!')$
+# {'Hello', 'Paris!'}$
+# {'Hello': '42Paris!'}$
