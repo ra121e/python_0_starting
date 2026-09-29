@@ -1,3 +1,8 @@
+# いろいろなデータ型を作って、それを引数にして呼び出したら
+# 1. いろいろな型を受け取れて
+# 2. オリジナルの型を取り出す
+# という関数を作る
+
 from find_ft_type import all_thing_is_obj
 
 ft_list = ["Hello", "tata!"]
@@ -12,3 +17,13 @@ all_thing_is_obj(ft_dict)
 all_thing_is_obj("Brian")
 all_thing_is_obj("Toto")
 print(all_thing_is_obj(10))
+
+# expectd output
+# List : <class 'list'>$
+# Tuple : <class 'tuple'>$
+# Set : <class 'set'>$
+# Dict : <class 'dict'>$
+# Brian is in the kitchen : <class 'str'>$
+# Toto is in the kitchen : <class 'str'>$
+# Type not found$
+# 42$
