@@ -7,8 +7,12 @@ if len(sys.argv) != 2:
 try:
     n = int(sys.argv[1])
 except Exception as e:
-    print(e)
-    sys.exit(1)
+    try:
+        raise AssertionError("hello")
+    except AssertionError as e:
+        print("AssertionError:", e)
+        sys.exit(1)
+
 if n % 2 == 0:
     print("I'm Even.")
 else:
