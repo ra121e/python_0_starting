@@ -1,9 +1,17 @@
+import sys
+
 
 def main():
+    try:
+        if (len(sys.argv) != 2):
+            raise AssertionError("more than one argument is provided")
+    except AssertionError as e:
+        print("AssertionError: ", e)
+        return
 
 
 if __name__ == "__main__":
-    main
+    main()
 
 # expected output
 # $>python building.py "Python 3.0, released in 2008, was a major revision that is not completely backward
@@ -15,3 +23,5 @@ if __name__ == "__main__":
 # 26 spaces
 # 15 digits
 # $>
+
+
