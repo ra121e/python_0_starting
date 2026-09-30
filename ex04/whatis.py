@@ -1,14 +1,18 @@
 import sys
 
-if len(sys.argv) != 2:
-    print("wrong argument number")
+try:
+    if len(sys.argv) != 2:
+        raise AssertionError("more than one argument is provided")
+
+except AssertionError as e:
+    print("AssertionError:", e)
     sys.exit(1)
 
 try:
     n = int(sys.argv[1])
 except Exception as e:
     try:
-        raise AssertionError("hello")
+        raise AssertionError("argument is not an integer")
     except AssertionError as e:
         print("AssertionError:", e)
         sys.exit(1)
