@@ -10,7 +10,7 @@ except AssertionError as e:
 
 try:
     n = int(sys.argv[1])
-except Exception as e:
+except Exception:
     try:
         raise AssertionError("argument is not an integer")
     except AssertionError as e:
