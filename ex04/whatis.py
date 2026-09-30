@@ -1,8 +1,10 @@
 import sys
 
 print(sys.argv[0])
-print(sys.argv[1])
-print(sys.argv[2])
+
+if len(sys.argv) != 2:
+    print("wrong argument number")
+    sys.exit(1)
 
 # expected output
 # $> python whatis.py 14
