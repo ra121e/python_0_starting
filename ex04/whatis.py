@@ -1,15 +1,13 @@
 import sys
 
-print(sys.argv[0])
-
 if len(sys.argv) != 2:
     print("wrong argument number")
     sys.exit(1)
 
 try:
     n = int(sys.argv[1])
-except ValueError:
-    print("wrong argument type. Need an integer.")
+except Exception as e:
+    print(e)
     sys.exit(1)
 if n % 2 == 0:
     print("I'm Even.")
@@ -27,4 +25,12 @@ else:
 # $>
 # $> python whatis.py 0
 # I'm Even.
+# $>
+
+# assertionError output
+# $> python whatis.py Hi!
+# AssertionError: argument is not an integer
+# $>
+# $> python whatis.py 13 5
+# AssertionError: more than one argument is provided
 # $>
