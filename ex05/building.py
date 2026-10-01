@@ -10,7 +10,7 @@ def main():
         print("AssertionError: ", e)
         return
     if len(sys.argv) < 2:
-        text = input("What is the text to count?\n")
+        text = sys.stdin.read()
     else:
         text = sys.argv[1]
     
