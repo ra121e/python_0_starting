@@ -9,11 +9,33 @@ def main():
     except AssertionError as e:
         print("AssertionError: ", e)
         return
+    
+    upper = 0
+    lower = 0
+    punctuation = 0
+    space = 0
+    digit = 0
 
+    for char in sys.argv[1]:
+        if char.isupper():
+            upper += 1
+        elif char.islower():
+            lower = lower + 1
+        elif char.isspace():
+            space += 1
+        elif char.isdigit():
+            digit += 1
+        else:
+            punctuation += 1
+    print(f"The text contains {len(sys.argv[1])} characters:")
+    print(f"{upper} upper letters")
+    print(f"{lower} lower letters")
+    print(f"{punctuation} punctuation marks")
+    print(f"{space} spaces")
+    print(f"{digit} digits")
 
 if __name__ == "__main__":
     main()
-    help(main)
 
 # expected output
 # $>python building.py "Python 3.0, released in 2008, was a major revision that is not completely backward
