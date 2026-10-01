@@ -14,6 +14,13 @@ def main():
     except Exception:
         print("AssertionError: the arguments are bad")
         return
+    words = sys.argv[1].split()
+    result = []
+    for word in words:
+        if len(word) > n:
+            result.append(word)
+    print(result)
+
 
 if __name__ == "__main__":
     main()
