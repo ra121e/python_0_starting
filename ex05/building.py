@@ -2,7 +2,7 @@ import sys
 
 
 def main():
-    """This program counts the number of characters in a given text and categorizes them into upper letters, lower letters, punctuation marks, spaces, and digits."""
+    """This program counts and categorizes arguments"""
     try:
         if (len(sys.argv) > 2):
             raise AssertionError("more than one argument is provided")
@@ -14,7 +14,6 @@ def main():
         text = sys.stdin.read()
     else:
         text = sys.argv[1]
-    
     upper = 0
     lower = 0
     punctuation = 0
@@ -39,12 +38,15 @@ def main():
     print(f"{space} spaces")
     print(f"{digit} digits")
 
+
 if __name__ == "__main__":
     main()
 
 # expected output
-# $>python building.py "Python 3.0, released in 2008, was a major revision that is not completely backward
-# compatible with earlier versions. Python 2 was discontinued with version 2.7.18 in 2020."
+# $>python building.py "Python 3.0, released in 2008,
+# was a major revision that is not completely backward
+# compatible with earlier versions. Python 2 was discontinued
+# with version 2.7.18 in 2020."
 # The text contains 171 characters:
 # 2 upper letters
 # 121 lower letters
@@ -52,5 +54,3 @@ if __name__ == "__main__":
 # 26 spaces
 # 15 digits
 # $>
-
-
