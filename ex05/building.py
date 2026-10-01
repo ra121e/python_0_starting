@@ -4,11 +4,15 @@ import sys
 def main():
     """This program counts the number of characters in a given text and categorizes them into upper letters, lower letters, punctuation marks, spaces, and digits."""
     try:
-        if (len(sys.argv) != 2):
+        if (len(sys.argv) > 2):
             raise AssertionError("more than one argument is provided")
     except AssertionError as e:
         print("AssertionError: ", e)
         return
+    if len(sys.argv) < 2:
+        text = input("What is the text to count?\n")
+    else:
+        text = sys.argv[1]
     
     upper = 0
     lower = 0
@@ -16,7 +20,7 @@ def main():
     space = 0
     digit = 0
 
-    for char in sys.argv[1]:
+    for char in text:
         if char.isupper():
             upper += 1
         elif char.islower():
@@ -27,7 +31,7 @@ def main():
             digit += 1
         else:
             punctuation += 1
-    print(f"The text contains {len(sys.argv[1])} characters:")
+    print(f"The text contains {len(text)} characters:")
     print(f"{upper} upper letters")
     print(f"{lower} lower letters")
     print(f"{punctuation} punctuation marks")
