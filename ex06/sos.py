@@ -52,7 +52,8 @@ def main():
             if char.upper() not in NESTED_MORSE:
                 raise AssertionError("the arguments are bad")
             code += NESTED_MORSE[char.upper()]
-        print(code)
+        # remove the last space from the code
+        print(code.rstrip(" "))
     except AssertionError as e:
         print("AssertionError:", e)
         return
