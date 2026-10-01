@@ -49,6 +49,7 @@ def main():
     try:
         code = ""
         for char in sys.argv[1]:
+            # "in" and "not in" is the operator to check in dict.
             if char.upper() not in NESTED_MORSE:
                 raise AssertionError("the arguments are bad")
             code += NESTED_MORSE[char.upper()]
