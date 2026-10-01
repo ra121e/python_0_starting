@@ -57,6 +57,7 @@ def main():
         print("AssertionError:", e)
         return
 
+
 if __name__ == "__main__":
     main()
 
