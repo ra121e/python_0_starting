@@ -1,11 +1,12 @@
 from typing import Any
 
 
+# type関数は値オブジェクトが指している型オブジェクトを取り出して返す
+# isは左右のポインタが指している型が同一かどうかをチェックする
 def all_thing_is_obj(x: Any):
-    # listは型を表す値で、type()は型を返す関数
+    # listは型を表す型オブジェクト
     if type(x) is list:
         print("list :", type(x))
-    # isは型の判定結果を返す
     elif type(x) is tuple:
         print("tuple :", type(x))
     elif type(x) is set:

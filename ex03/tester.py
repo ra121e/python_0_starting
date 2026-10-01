@@ -1,6 +1,8 @@
 from NULL_not_found import NULL_not_found
 
 
+# FalseはFalseを保持した値オブジェクト
+# NaNは指数部がすべて1で仮数部が≠0
 Nothing = None
 Garlic = float("NaN")
 Zero = 0
