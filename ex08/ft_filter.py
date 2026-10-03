@@ -12,7 +12,7 @@ def main():
     print(ft_filter.__doc__)
 
     x = ft_filter(lambda x: x % 2 == 0, range(11))
-    print(x)
+    print(next(x))
     return
 
 
