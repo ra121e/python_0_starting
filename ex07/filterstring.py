@@ -15,7 +15,7 @@ def main():
         print("AssertionError: the arguments are bad")
         return
     words = sys.argv[1].split()
-	result = [lambda x: x if len(x) > n else None for x in words]
+    result = [(lambda x: x if len(x) > n else None)(x) for x in words]
     # result = [word for word in words if len(word) > n]
     # for word in words:
     #     if len(word) > n:
