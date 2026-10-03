@@ -15,10 +15,10 @@ def main():
         print("AssertionError: the arguments are bad")
         return
     words = sys.argv[1].split()
-    result = []
-    for word in words:
-        if len(word) > n:
-            result.append(word)
+    result = [word for word in words if len(word) > n]
+    # for word in words:
+    #     if len(word) > n:
+    #         result.append(word)
     print(result)
 
 
