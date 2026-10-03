@@ -1,9 +1,13 @@
 def ft_filter(function, iterable):
-    return
-
+    """
+    This function takes a function and an iterable as arguments
+    and returns a new iterable containing only the elements
+    for which the function returns True
+    """
 
 def main():
-    pass
+    print(ft_filter.__doc__)
+    return
 
 
 
