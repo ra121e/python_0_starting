@@ -4,9 +4,15 @@ def ft_filter(function, iterable):
     and returns a new iterable containing only the elements
     for which the function returns True
     """
+    for it in iterable:
+        if function(it):
+            yield it
 
 def main():
     print(ft_filter.__doc__)
+
+    x = ft_filter(lambda x: x % 2 == 0, range(11))
+    print(x)
     return
 
 
