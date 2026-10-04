@@ -8,18 +8,18 @@ is true. If function is None, return the items that are true."""
             yield it
 
 
-def main():
-    if ft_filter.__doc__ != filter.__doc__:
-        print("ft_filter docstring is different from filter docstring")
-    else:
-        print("yes, doc are the same")
-    print(ft_filter.__doc__)
-    print(filter.__doc__)
+# def main():
+#     if ft_filter.__doc__ != filter.__doc__:
+#         print("ft_filter docstring is different from filter docstring")
+#     else:
+#         print("yes, doc are the same")
+#     print(ft_filter.__doc__)
+#     print(filter.__doc__)
 
-    x = ft_filter(lambda x: x % 2 == 0, range(11))
-    print(next(x))
-    return
+#     x = ft_filter(lambda x: x % 2 == 0, range(11))
+#     print(next(x))
+#     return
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
