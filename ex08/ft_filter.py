@@ -8,15 +8,13 @@ def ft_filter(function, iterable):
         if function(it):
             yield it
 
-def main():
-    print(ft_filter.__doc__)
+# def main():
+#     print(ft_filter.__doc__)
 
-    x = ft_filter(lambda x: x % 2 == 0, range(11))
-    print(next(x))
-    return
-
-
+#     x = ft_filter(lambda x: x % 2 == 0, range(11))
+#     print(next(x))
+#     return
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
