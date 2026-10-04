@@ -9,6 +9,7 @@ def main():
     except AssertionError as e:
         print("AssertionError:", e)
         return
+
     try:
         n = int(sys.argv[2])
     except Exception:
@@ -16,10 +17,13 @@ def main():
         return
     words = sys.argv[1].split()
     result = [(lambda x: x if len(x) > n else None)(x) for x in words]
-    # result = [word for word in words if len(word) > n]
+    # 1. basic style
+    # result = []
     # for word in words:
     #     if len(word) > n:
     #         result.append(word)
+    # 2. list conprehension expression
+    # result = [word for word in words if len(word) > n]
     print(result)
 
 
