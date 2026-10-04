@@ -5,8 +5,8 @@ ft_dict = {"Hello": "titi!"}
 # your code here
 
 ft_list.append("World!")
-ft_tuple2 = (ft_tuple[0], "France!")
-ft_tuple = ("Hello", "France!")
+ft_tuple = (ft_tuple[0], "France!")
+# ft_tuple = ("Hello", "France!")
 ft_set.remove("tutu!")
 ft_set.add("Paris!")
 
